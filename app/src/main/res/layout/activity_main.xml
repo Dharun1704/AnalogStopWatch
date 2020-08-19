@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    tools:context=".MainActivity">
+
+   <com.example.analogclock.AnalogClock
+       android:layout_width="350dp"
+       android:layout_height="350dp"
+       android:id="@+id/clock"
+       android:layout_centerInParent="true"/>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Start"
+       android:textAllCaps="false"
+       android:textColor="#FFF"
+       android:background="#DC143C"
+       android:layout_centerInParent="true"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="30dp"
+       android:id="@+id/stopWatchStart"/>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Reset"
+       android:textColor="#FFF"
+       android:textAllCaps="false"
+       android:background="#252529"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="30dp"
+       android:layout_toEndOf="@+id/stopWatchStart"
+       android:layout_marginStart="30dp"
+       android:id="@+id/stopWatchReset"/>
+
+</RelativeLayout>
